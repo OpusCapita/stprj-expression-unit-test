@@ -37,8 +37,24 @@
 ## Notes
 - This test suite does not support ES6 features in expressions.
 - This test suite does currently not support the `format` functions from PIM.
-- This test suite works since PIM 8.8. If you have an older Function, look at [this repository](https://github.com/OpusCapita/stprj-expression-unit-test-examples) to see, how to make it possible, to use this test Suite.
-
+- This test suite works since PIM 8.8. If you have an older PIM, you have to change the 'util/index.js' like this:
+> You need to change this:
+> ```let contextTag = "";
+> let term = sinon.stub()
+> let boilerplate = sinon.stub()
+> let product = {
+>  attributeValue: sinon.stub()
+> }```
+> To this:
+> ```let contextTag = "";
+> let term = sinon.stub()
+> let boilerplate = sinon.stub()
+> let product = {
+>  attributeValue: sinon.stub()
+>  attributeValues: sinon.stub()
+> }```
+> Also you need to make attributeValue to return something like this:
+> 'product.attributeValue.returns(value: function(){return 5})'
 ## Contributing
 We are happy to accept pull requests.
 
