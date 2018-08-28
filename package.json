@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Library to unit-test expressions in PIM8",
   "main": "unitTestLibrary.js",
-  "scripts": {
-    "start": "mocha -w unitTestLibrary.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OpusCapita/stprj-expression-unit-test.git"
@@ -17,8 +14,6 @@
   },
   "homepage": "https://github.com/OpusCapita/stprj-expression-unit-test#readme",
   "dependencies": {
-    "fs": "0.0.1-security",
-    "mocha": "^4.0.1",
-    "sinon": "^4.0.1"
+    "jest": "^23.5.0"
   }
 }
