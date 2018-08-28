@@ -28,10 +28,9 @@ Then you can use the function in the test file as myFunction()
 - This library reads the file `customJSFunctions.js` from ```customizationArea/integration/externalProduct/customJSFunctions.js```. You can change that path in the `config.json`
 
 ## How to write tests:
-- This framework is based on  [sinon](http://sinonjs.org/) and [mocha](https://mochajs.org/). In order to use a different framework than `mocha`, adjust the  start command inside the `package.json`.
-- It is possible to use libraries like [chai](http://chaijs.com/api/) by simply installing it as a dependency and `require`ing it.
+- This framework is based on  [jest](https://jestjs.io).
 - Use our [example repository](https://github.com/OpusCapita/pim-integrations-expression-unit-test-examples) for in-depth examples and documentation.
-- All functions usually available within an expression, like `term` and `boilerplate`, are set up as [sinon stubs](http://sinonjs.org/). See the example repository for details.
+- All functions usually available within an expression, like `term` and `boilerplate`, are set up as [jest-mocks](https://jestjs.io/docs/en/mock-functions). See the example repository for details.
 
 ## How to use
 - Type `npm start` to run the tests
@@ -49,6 +48,8 @@ We are happy to accept pull requests.
 
 ## Contributors
 
-| [<img src="https://avatars.githubusercontent.com/u/30691117" width="100px;"/>](https://github.com/alexejFroebel) | [**Alexej Froebel**](https://github.com/alexejFroebel)     |
+| [<img src="https://avatars.githubusercontent.com/u/41996712" width="100px;"/>](https://github.com/uwestolz) | [**Uwe Stolz**](https://github.com/uwestolz)     |
 | :---: | :---: |
+| [<img src="https://avatars.githubusercontent.com/u/36043138" width="100px;"/>](https://github.com/davidbrien) | [**David Brien**](https://github.com/davidbrien)     |
+| [<img src="https://avatars.githubusercontent.com/u/30691117" width="100px;"/>](https://github.com/alexejFroebel) | [**Alexej Froebel**](https://github.com/alexejFroebel)     |
  [<img src="https://avatars.githubusercontent.com/u/4085533" width="100px;"/>](https://github.com/pflenker) | [**Philipp Flenker**](https://github.com/pflenker) |
