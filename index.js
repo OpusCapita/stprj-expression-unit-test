@@ -1,5 +1,5 @@
 const fs = require("fs")
-const jest = require("jest")
+const jest = require("jest-mock")
 
 
 
